@@ -4,7 +4,7 @@ import torch
 import os
 import numpy as np
 from torch.utils.data import Dataset
-for PIL import Image
+from PIL import Image
 from torchvision import transforms
 from Configs import configs
 
