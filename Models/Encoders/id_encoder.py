@@ -3,7 +3,6 @@ import torch.nn
 from facenet_pytorch import MTCNN, InceptionResnetV1
 from torchvision import transforms
 from Configs import configs
-
 IMAGE_SIZE = 220
 mtcnn = MTCNN(
     image_size = IMAGE_SIZE, margin = 0 ,
