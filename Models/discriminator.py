@@ -1,4 +1,4 @@
-import torch.nn
+import torch.nn as nn
 
 class Discriminator(nn.Module):
     def __init__(self):
@@ -20,3 +20,9 @@ class Discriminator(nn.Module):
     
     def forward(self,input_data):
         return self.model(input_data)
+
+# import torch
+# lm = Discriminator()
+# a = lm.forward(torch.randn(1,512))
+# print(lm)
+# print(a)

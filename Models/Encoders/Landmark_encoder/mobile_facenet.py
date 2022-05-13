@@ -157,3 +157,9 @@ class MobileFaceNet(Module):
         conv_features = self.conv_6_sep(out)
         out = self.output_layer(conv_features)
         return out, conv_features
+
+# import torch
+# lm = MobileFaceNet(input_size=(112, 112))
+# a = lm.forward(torch.randn(1, 3, 112, 112))
+# print(lm)
+# print(a)

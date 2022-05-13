@@ -1,5 +1,5 @@
 import torch
-import torch.nn
+import torch.nn as nn
 import torch.utils.data 
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
@@ -26,3 +26,9 @@ class Identity(nn.Module):
 
     def forward(self, x):
         return x
+
+# import torch
+# lm = Encoder_attributes()
+# a = lm.forward(torch.randn(1,3,299,299))
+# print(lm)
+# print(a)

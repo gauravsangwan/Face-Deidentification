@@ -1,5 +1,5 @@
 import torch
-import torch.nn
+import torch.nn as nn
 from facenet_pytorch import MTCNN, InceptionResnetV1
 from torchvision import transforms
 from Configs import configs
@@ -28,6 +28,7 @@ class Id_encoder(nn.Module):
                                         int(bboxes[idx][0][0]):int(bboxes[idx][0][2])].unsqueeze(0))
             except:
                 cropped_image = crop_transform(image.unsqueeze(0)
+                # pass
             cropped_batches.append(cropped_image)
         return torch.cat(cropped_batches,dim = 0)
 
@@ -43,3 +44,9 @@ class Id_encoder(nn.Module):
         cropped_images = self.preprocess_imgs_to_ide(images)
         img_embeddings = resnet(cropped_images)
         return img_embeddings
+
+# import torch
+# lm = Id_encoder()
+# a = lm.forward(torch.randn(1,3,299,299))
+# print(lm)
+# print(a)

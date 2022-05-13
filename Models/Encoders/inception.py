@@ -1,5 +1,5 @@
 import torch
-import torch.nn
+import torch.nn as nn
 import torch.utils.data
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
@@ -23,3 +23,9 @@ class Inception(nn.Module):
         # pass
         resized_data = self.preprocess(data)
         return self.model(resized_data * 255)
+
+# import torch
+# lm = Inception()
+# a = lm.forward(torch.randn(1,3,299,299))
+# print(lm)
+# print(a)

@@ -1,7 +1,7 @@
 from collections import namedtuple
 import torch
 # from torch.nn import Conv2d, BatchNorm2d, PReLU, ReLU, Sigmoid, MaxPool2d, AdaptiveAvgPool2d, Sequential, Module
-import torch.nn
+import torch.nn as nn
 """
 ArcFace implementation from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch)
 """

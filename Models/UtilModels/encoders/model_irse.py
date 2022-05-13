@@ -1,7 +1,8 @@
 import torch
-import torch.nn
+import torch.nn as nn
 
 from Models.UtilModels.encoders.helpers import get_blocks, Flatten,bottleneck_IR,bottleneck_IR_SE, l2_norm
+# from helpers import get_blocks, Flatten,bottleneck_IR,bottleneck_IR_SE, l2_norm
 """
 Modified Backbone implementation from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch)
 """

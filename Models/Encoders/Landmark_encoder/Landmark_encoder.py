@@ -1,5 +1,6 @@
-from torch
-from .mobile_facenet import MobileFaceNet
+import torch 
+import torch.nn as nn
+from mobile_facenet import MobileFaceNet
 from torchvision import transforms
 
 PATH = 'Weights/mobilefacenet.pth.tar'
@@ -27,3 +28,8 @@ class Encoder(nn.Module):
 
         return outputs*112, landmarks[:,17:,:]
 
+# import torch
+# lm = Encoder()
+# a = lm.forward(torch.randn(1,3,112,112))
+# print(lm)
+# print(a)

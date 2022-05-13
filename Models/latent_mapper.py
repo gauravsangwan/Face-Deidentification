@@ -1,4 +1,5 @@
-import torch.nn
+import torch.nn as nn
+
 
 class LatentMapper(nn.Module):
     def __init__(self):
@@ -20,3 +21,8 @@ class LatentMapper(nn.Module):
     
     def forward(self,input_data):
         return self.model(input_data)
+# import torch
+# lm = LatentMapper()
+# a = lm.forward(torch.randn(1,2560))
+# print(lm)
+# print(a)
