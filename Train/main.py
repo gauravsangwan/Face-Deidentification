@@ -130,7 +130,7 @@ with tqdm(total = config['epochs']*len(train_loader)) as pbar:
             id_images = images.detach().clone().to(configs.device)
             attr_images = images.detach().clone().to(configs.device)
             ws = ws.to(configs.device)
-            if config['use_cycle'] and idx%config['IdDiffersAttrTrainRatio'] == 0":
+            if config['use_cycle'] and idx%config['IdDiffersAttrTrainRatio'] == 0:
                 attr_images = cycles_images_to_create_diff_order(attr_images)
             try:
                 with torch.no_grad():
