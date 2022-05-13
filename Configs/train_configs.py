@@ -18,7 +18,7 @@ config = {
     'use_id': True,
     'use_landmark': True,
     'use_adverserial': False,
-    'train_precentege': 0.95,
+    'train_precentege': 0.7,
     'epochs': 40,
     'use_cycle': True,
     'use_l2': True
