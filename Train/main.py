@@ -32,7 +32,7 @@ import wandb
 from Train.trainer import Trainer
 from torch.utils.data import DataLoader,random_split
 from Models.Encoders.Landmark_encoder import Landmark_encoder
-from Models.Encoder.Inception import Inception
+from Models.Encoders.Inception import Inception
 from Models.discriminator import Discriminator
 from Models.latent_mapper import Latent_mapper
 from Models.StyleGAN2.model import Generator
